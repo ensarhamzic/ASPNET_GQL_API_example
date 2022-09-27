@@ -66,9 +66,10 @@ namespace GraphQL_ASPNET_API.GraphQL
             if (car == null) throw new Exception("Car not found");
             car.Model = input.Model;
             car.HorsePower = input.HorsePower;
-            car.BrandId = input.BrandId;
             car.ReleaseYear = input.ReleaseYear;
             car.ImageUrl = input.ImageUrl;
+            car.BrandId = car.BrandId;
+            car.Brand = car.Brand;
 
             context.SaveChanges();
 

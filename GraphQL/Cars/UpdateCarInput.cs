@@ -7,6 +7,5 @@
         public int ReleaseYear { get; set; }
         public int HorsePower { get; set; }
         public string? ImageUrl { get; set; }
-        public int BrandId { get; set; }
     }
 }
